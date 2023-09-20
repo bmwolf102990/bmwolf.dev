@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react";
-import bucketList from "@/data/bucketList";
+import bucketListData from "@/data/bucketListData";
 
 interface BucketListProps {
     item: string;
@@ -13,7 +13,7 @@ export const BucketList: React.FC = () => {
 
 
     useEffect(() => {
-        setList(bucketList);
+        setList(bucketListData);
     }, [list])
 
     const listItems = list.map((item, i) => {
