@@ -1,5 +1,5 @@
 import { Heading } from "@/components/Heading/Heading";
-import { BucketList } from "@/components/Bucket List/BucketList";
+import { BucketList } from "@/components/BucketList/BucketList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
