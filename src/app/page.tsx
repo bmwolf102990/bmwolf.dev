@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
+    <main className=''>
       <section className='bg-white pt-20 pl-20'>
         <Heading
           level={6}
@@ -122,25 +122,25 @@ export default function Home() {
             <br />
             {`I also enrolled in and graduated from Justice Through Code's Python & Django full stack web development intensive. It was an amazing learning and community building experience which I will be forever grateful for.`}
           </p>
-          <Link className='block hover:underline' href='https://shieldbar.com'>
+          <Link className='block hover:underline mb-2' href='https://shieldbar.com'>
             Learn more about Shield Bar Marketing
             <FontAwesomeIcon className='ml-2' icon={faArrowAltCircleRight} />
           </Link>
-          <Link className='block hover:underline mb-2' href='https://centerforjustice.columbia.edu/justicethroughcode'>
+          <Link className='block hover:underline' href='https://centerforjustice.columbia.edu/justicethroughcode'>
             Learn more about Justice Through Code
             <FontAwesomeIcon className='ml-2' icon={faArrowAltCircleRight} />
           </Link>
         </div>
         <div>
           <Image
-            className='scale-150 translate-x-20 translate-y-10' 
+            className='scale-150 translate-x-40 translate-y-10' 
             src='/sbm_logo.png'
             alt=''
             width={200}
             height={200}
           />
           <Image
-            className='scale-150 origin-top-right translate-x-80 translate-y-16 rotate-225' 
+            className='scale-150 origin-top-right translate-x-60 translate-y-16 rotate-225' 
             src='/jtc_logo.jpeg'
             alt=''
             width={300}
@@ -148,7 +148,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className='bg-stacked_waves_green bg-cover bg-no-repeat h-[875px] pt-16 pl-20'>
+      <section className='bg-stacked_waves_green bg-cover bg-no-repeat h-[875px] pt-20 pl-20'>
         <Heading
           level={6}
           content='Open Source'
@@ -171,7 +171,7 @@ export default function Home() {
           <FontAwesomeIcon className='ml-2' icon={faArrowAltCircleRight} />
         </Link>
       </section>
-      <section className='grid grid-cols-2 bg-white h-[300px] pt-10 pl-20'>
+      <section className='grid grid-cols-2 bg-white h-[300px] pt-24 pl-20'>
         <div>
           <Heading
             level={6}
@@ -186,7 +186,7 @@ export default function Home() {
           <p className='font-thin mb-5'>
             {`I started my journey into software engineering and web development with the help of an organization known as Persevere Now. Simply put, they changed my life forever.`}
           </p>
-          <Link className='block hover:underline mb-2' href='https://perseverenow.org'>
+          <Link className='block hover:underline' href='https://perseverenow.org'>
             Learn more about Persevere
             <FontAwesomeIcon className='ml-2' icon={faArrowAltCircleRight} />
           </Link>
@@ -241,7 +241,7 @@ export default function Home() {
         />
         <Heading 
           level={6}
-          content='This is just a bit of filler text'
+          content='Only if you want to. No pressure'
           sx={{fontWeight: 'lighter', color: 'white'}}
         />
       </section>
