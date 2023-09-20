@@ -246,7 +246,7 @@ export default function Home() {
         />
       </section>
       <section className='bg-white h-[400px] pt-10 pl-20'>
-        {/* test comment */}
+        
       </section>
     </main>
   )
