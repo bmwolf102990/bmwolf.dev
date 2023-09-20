@@ -1,5 +1,9 @@
 export const bucketList = [
     {
+        item: 'Visit all 7 continents',
+        checked: false,
+    },
+    {
         item: 'Visit all US national parks',
         checked: false,
     },
@@ -8,82 +12,113 @@ export const bucketList = [
         checked: false,
     },
     {
-        item: '',
+        item: 'Hike the entire PCT',
         checked: false,
     },
     {
-        item: '',
+        item: 'Hike the entire CDT',
         checked: false,
     },
     {
-        item: '',
+        item: 'Hike the entire GPT',
         checked: false,
     },
     {
-        item: '',
+        item: 'Hike the entire AT',
         checked: false,
     },
     {
-        item: '',
+        item: 'Complete the Phoenix Marathon',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Denali',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Aconcagua',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Vinson Massif',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Mont Blanc',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Kilimanjaro',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Elbrus',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Everest',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Puncak Jaya',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Kosciuszko',
         checked: false,
     },
     {
-        item: '',
+        item: 'Summit Chimborazo',
         checked: false,
     },
     {
-        item: '',
+        item: 'Custom build a gaming computer',
         checked: false,
     },
     {
-        item: '',
+        item: 'Custom build a smart mirror',
         checked: false,
     },
     {
-        item: '',
+        item: 'Custom build a home server',
         checked: false,
     },
     {
-        item: '',
+        item: 'Practice Brazilian Jiu-Jitsu',
         checked: false,
     },
-    
+    {
+        item: 'Practice Tai Chi',
+        checked: false,
+    },
+    {
+        item: 'Practice Qigong',
+        checked: false,
+    },
+    {
+        item: 'Practice rock climbing',
+        checked: false,
+    },
+    {
+        item: 'Practice meditation',
+        checked: true,
+    },
+    {
+        item: 'Attend a USWNT match',
+        checked: false,
+    },
+    {
+        item: 'Attend a UNMNT match',
+        checked: false,
+    },
+    {
+        item: 'Attend a Uruguay match',
+        checked: false,
+    },
+    {
+        item: 'Attend a FIFA World Cup',
+        checked: false,
+    },
 ];
 
 export default bucketList;
