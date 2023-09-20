@@ -1,7 +1,9 @@
 import { Heading } from "@/components/Heading/Heading";
 import { BucketList } from "@/components/BucketList/BucketList";
+import { ConnectList } from "@/components/ConnectList/ConnectList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowAltCircleRight, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faCopyright } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -58,7 +60,7 @@ export default function Home() {
             sx={{fontWeight: 'bold'}}
           />
           <p className='font-thin mb-5'>
-            {`In 2023 I began working through Banyan Labs as a contracted Front End Engineer for Indeed. It has been an unbelievable learning experience and a motivator to keep developing my skills.`}
+            {`In 2023 I began working through Banyan Labs as a contracted Front End Engineer for Indeed. It has been an unbelievable learning experience and a motivator for me to keep developing my skills.`}
           </p>
           <Link className='block hover:underline' href='https://banyanlabs.io'>
             Learn more about Banyan Labs
@@ -220,7 +222,7 @@ export default function Home() {
           <FontAwesomeIcon className='ml-2' icon={faArrowAltCircleRight} />
         </Link>
       </section>
-      <section className='bg-white h-[800px] pt-12 pl-20'>
+      <section className='bg-white h-[800px] pt-12 pl-20 pr-20'>
         <Heading
           level={3}
           content='Bucket List'
@@ -233,20 +235,34 @@ export default function Home() {
         />
         <BucketList />
       </section>
-      <section className='bg-stacked_waves_blue bg-cover bg-no-repeat h-[875px] pt-12 pl-20'>
-      <Heading
+      <section className='bg-stacked_waves_blue bg-cover bg-no-repeat h-[850px] pt-12 pl-20 pr-20'>
+    
+      </section>
+      <section className='bg-white h-[875px] pl-20 pr-20'>
+        <Heading
           level={3}
           content='Connect with me'
-          sx={{paddingTop: '10rem', fontWeight: 'bold', color: 'white'}}
+          sx={{paddingTop: '10rem', fontWeight: 'bold'}}
         />
         <Heading 
           level={6}
-          content='Only if you want to. No pressure'
-          sx={{fontWeight: 'lighter', color: 'white'}}
+          content='Only if you REALLY want to. No pressure'
+          sx={{fontWeight: 'lighter', marginBottom: '0.75rem'}}
         />
+        <ConnectList />    
       </section>
-      <section className='bg-white h-[400px] pt-10 pl-20'>
-        
+      <section>
+        <div className='text-center'>
+          <span>designed & developed with </span> 
+          <FontAwesomeIcon icon={faHeart} /> 
+          <span> by <a className='underline' href='https://github.com/bmwolf102990'>Bryan Wolf</a></span>
+          <br />
+          <FontAwesomeIcon icon={faCopyright} />
+          <span> 2023</span>
+        </div>
+        <span>
+          <FontAwesomeIcon className='float-right p-3 text-white hover:text-black' icon={faCode} />
+        </span>
       </section>
     </main>
   )

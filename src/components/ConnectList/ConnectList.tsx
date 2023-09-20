@@ -1,11 +1,15 @@
 "use client"
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import connectListData from '@/data/connectListData';
+import Link from "next/link";
 
 interface ConnectListProps {
     item: string;
     icon: string;
+    blurb: string;
+    link: string;
 }
 
 export const ConnectList: React.FC = () => {
@@ -18,16 +22,31 @@ export const ConnectList: React.FC = () => {
 
     const listItems = list.map((item, i) => {
         return (
-            <label key={i} className='flex pt-5 pb-5' htmlFor={item.item}>
-                {/* <input checked={item.checked} className='self-center rounded-full bg-green-100 border-green-500 text-green-500 focus:ring-green-200 w-5 h-5' type='checkbox' /> */}
-                <span className='self-center ml-2'>{item.item}</span>
-            </label>
+            <Link
+                key={i}
+                href={item.link}
+                target='_blank'
+                className='flex pt-2 pb-2 pl-2 mb-4 rounded text-black hover:bg-neutral-300 hover:opacity-70'
+            >
+                <Image
+                    className='rounded' 
+                    src={item.icon}
+                    alt=''
+                    width={40}
+                    height={40}
+                    
+                    />
+                <div>
+                    <span className='self-center ml-2'>{item.item}</span>
+                    <p className='self-center ml-2 font-thin'>{item.blurb}</p>
+                </div>
+            </Link>
         );
     });
 
     return(
         <>
-            <div className=' grid grid-cols-5'>
+            <div className=''>
                 {listItems}
             </div>
         </>
