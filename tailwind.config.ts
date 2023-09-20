@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'stacked_waves_blue': 'url("/stacked-waves-blue-haikei.svg")',
+        'stacked_waves_green': 'url("/stacked-waves-green-haikei.svg")',
+        'stacked_waves_orange': 'url("/stacked-waves-orange-haikei.svg")',
+        'stacked_waves_purple': 'url("/stacked-waves-purple-haikei.svg")',
+        'stacked_waves_red': 'url("/stacked-waves-red-haikei.svg")',
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 }
 export default config
