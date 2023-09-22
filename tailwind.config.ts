@@ -7,6 +7,18 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'mobile': '375px',
+      // => @media (min-width: 576px) { ... }
+      'tablet': '768px',
+      // => @media (min-width: 576px) { ... }
+      'netbook': '1024px',
+      // => @media (min-width: 960px) { ... }
+      'desktop': '1440px',
+      // => @media (min-width: 1440px) { ... }
+      '4k':'2560px'
+      // => @media (min-width: 2560px) { ... }
+    },
     extend: {
       backgroundImage: {
         'stacked_waves_blue': 'url("/stacked-waves-blue-haikei.svg")',
