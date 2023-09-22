@@ -38,7 +38,7 @@ export const ConnectList: React.FC = () => {
                     />
                 <div>
                     <span className='self-center ml-2'>{item.item}</span>
-                    <p className='self-center ml-2 font-thin'>{item.blurb}</p>
+                    <p className='self-center ml-2 font-thin text-lg'>{item.blurb}</p>
                 </div>
             </Link>
         );
