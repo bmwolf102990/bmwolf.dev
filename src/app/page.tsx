@@ -84,27 +84,38 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className='bg-stacked_waves_red bg-cover bg-no-repeat h-[1575px] 4k:pt-96 desktop:pt-60 netbook:pt-48 4k:pl-40 desktop:pl-20 netbook:pl-20'>
-        <Heading
-          level={6}
-          content='Passion Project'
-          sx={{paddingTop: '15rem', fontWeight: 'bold', color: 'white'}}
-        />
-        <Heading 
-          level={3}
-          content='visualDev.io'
-          sx={{fontWeight: 'bold', color: 'white'}}
-        />
-        <p className='w-1/2 font-thin text-lg text-white mb-5'>
-          {`Web development learning tools for visual learners.`}
-          <br />
-          <br />
-          {`Do you have trouble understanding how something like a binary search works JUST from thinking it through? That is the problem that visualDev.io aims to solve; by providing a suite of visually beautiful interactive learning apps that let you SEE how code and algorithms do what they do.`}
-        </p>
-        <Link className='block hover:underline text-white' href='#'>
-          Check it out
-          <FontAwesomeIcon className='ml-2' icon={faArrowAltCircleRight} />
-        </Link>
+      <section className=' grid grid-cols-2 bg-stacked_waves_red bg-cover bg-no-repeat h-[1575px] 4k:pt-80 desktop:pt-60 netbook:pt-40 4k:pl-40 desktop:pl-20 netbook:pl-20'>
+        <div>
+          <Heading
+            level={6}
+            content='Passion Project'
+            sx={{paddingTop: '15rem', fontWeight: 'bold', color: 'white'}}
+          />
+          <Heading 
+            level={3}
+            content='visualDev'
+            sx={{fontWeight: 'bold', color: 'white'}}
+          />
+          <p className='font-thin text-lg text-white mb-5'>
+            {`A web development learning platform for visual learners.`}
+            <br />
+            <br />
+            {`Do you have trouble understanding how something like a binary search works without a visual aid? That is the problem that visualDev aims to solve; by providing a suite of visually beautiful interactive learning apps that let you SEE how code and algorithms do what they do.`}
+          </p>
+          <Link className='block hover:underline text-white' href='#'>
+            Check it out
+            <FontAwesomeIcon className='ml-2' icon={faArrowAltCircleRight} />
+          </Link>
+        </div>
+        <div>
+          <Image
+            className='scale-150 4k:translate-x-96 desktop:translate-x-52 netbook:translate-x-32 4k:translate-y-88 desktop:translate-y-88 netbook:translate-y-96 rotate-12 hover:-rotate-12 bg-black py-6 rounded shadow-2xl' 
+            src='/visualdev.svg'
+            alt=''
+            width={125}
+            height={125}
+          />
+        </div>
       </section>
       <section className='grid grid-cols-2 bg-white h-[400px] 4k:pt-40 desktop:pt-0 netbook:pt-0 4k:pl-40 desktop:pl-20 netbook:pl-20'>
         <div>
@@ -142,7 +153,7 @@ export default function Home() {
             height={200}
           />
           <Image
-            className='4k:scale-150 desktop:scale-150 netbook:scale-150 desktop:origin-left netbook:origin-right 4k:translate-x-96 desktop:translate-x-48 netbook:translate-x-32 4k:translate-y-0 desktop:translate-y-0 netbook:translate-y-32 rotate-12' 
+            className='4k:scale-150 desktop:scale-150 netbook:scale-125 desktop:origin-left netbook:origin-right 4k:translate-x-96 desktop:translate-x-48 netbook:translate-x-32 4k:translate-y-0 desktop:translate-y-0 netbook:translate-y-32 rotate-12' 
             src='/jtc.jpeg'
             alt=''
             width={300}
